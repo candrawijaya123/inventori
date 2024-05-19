@@ -15,6 +15,8 @@ Route::middleware(['auth'])->group(function () {
 
     Route::controller(UserController::class)->name('user.')->group(function () {
         Route::get('/menu/daftar-user', [UserController::class, 'index'])->name('index');
+        Route::get('/menu/daftar-user/create', [UserController::class, 'create'])->name('create');
     });
+
 });
 

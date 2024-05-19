@@ -5,7 +5,7 @@
         <div class="card">
             <div class="card-body">
                 <h4 class="card-title">Daftar User</h4>
-                <a href="" class="btn btn-primary mb-3"><i class="mdi mdi-account-plus"></i>
+                <a href="{{ route('user.create') }}" class="btn btn-primary mb-3"><i class="mdi mdi-account-plus"></i>
                     Tambah User</a>
                 <table class="table table-striped" id="tbl-user">
                     <thead>
