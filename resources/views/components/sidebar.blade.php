@@ -20,8 +20,8 @@
                 <span class="menu-title">Daftar Pegawai</span>
             </a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="index.html">
+        <li class="nav-item {{ Request::is('menu/daftar-supplier*') ? 'active' : '' }}">
+            <a class="nav-link" href="/menu/daftar-supplier">
                 <span class="icon-bg"><i class="mdi mdi-truck-delivery menu-icon"></i></span>
                 <span class="menu-title">Daftar Supplier</span>
             </a>

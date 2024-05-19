@@ -13,3 +13,16 @@ Route::get('/menu/daftar-user', function () {
 Route::get('/menu/daftar-pegawai', function () {
     return view('pages.pegawai.index');
 });
+
+Route::get('/menu/daftar-supplier', function () {
+    return view('pages.supplier.index');
+});
+
+Route::get('/tambah-supplier', function () {
+    return view('pages.supplier.create');
+});
+
+Route::get('/login', function () {
+    return view('pages.auth.login');
+});
+
