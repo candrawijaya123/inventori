@@ -22,15 +22,18 @@ class SupplierController extends Controller
      */
     public function create()
     {
-        //
+        return view('pages.supplier.create');
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreSupplierRequest $request)
+    public function store(Supplier $supplier, StoreSupplierRequest $storeSupplierRequest)
     {
-        //
+        $data = $storeSupplierRequest->validated();
+        $supplier->create($data);
+
+        return redirect(route('supplier.index'));
     }
 
     /**

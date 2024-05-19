@@ -22,7 +22,7 @@ class StoreSupplierRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'kode_supplier' => 'required|integer|min:3|unique:suppliers',
+            'kode_supplier' => 'required|numeric|min:5|unique:suppliers',
             'nama_supplier' => 'required|string|max:150',
             'telpon' => 'required|string|min:12|',
             'alamat' => 'required|string|max:255',
