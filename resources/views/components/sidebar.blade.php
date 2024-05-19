@@ -22,6 +22,12 @@
         </li>
         <li class="nav-item nav-category">Menu Barang</li>
         <li class="nav-item">
+            <a class="nav-link" href="pages/icons/mdi.html">
+                <span class="icon-bg"><i class="mdi mdi-package menu-icon"></i></span>
+                <span class="menu-title">Daftar Barang</span>
+            </a>
+        </li>
+        <li class="nav-item">
             <a class="nav-link" href="pages/forms/basic_elements.html">
                 <span class="icon-bg"><i class="mdi mdi-package-down menu-icon"></i></span>
                 <span class="menu-title">Penerimaan Barang</span>
@@ -31,18 +37,6 @@
             <a class="nav-link" href="pages/charts/chartjs.html">
                 <span class="icon-bg"><i class="mdi mdi-package-up menu-icon"></i></span>
                 <span class="menu-title">Pengeluaran Barang</span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="pages/icons/mdi.html">
-                <span class="icon-bg"><i class="mdi mdi-tag-multiple menu-icon"></i></span>
-                <span class="menu-title">Daftar Kategori</span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="pages/icons/mdi.html">
-                <span class="icon-bg"><i class="mdi mdi-package menu-icon"></i></span>
-                <span class="menu-title">Daftar Barang</span>
             </a>
         </li>
         <li class="nav-item">

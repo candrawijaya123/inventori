@@ -27,5 +27,11 @@ Route::middleware(['auth'])->group(function () {
         Route::post('/menu/daftar-supplier/store', [SupplierController::class, 'store'])->name('store');
     });
 
+    Route::controller(SupplierController::class)->name('supplier.')->group(function () {
+        Route::get('/menu/daftar-supplier', [SupplierController::class, 'index'])->name('index');
+        Route::get('/menu/daftar-supplier/create', [SupplierController::class, 'create'])->name('create');
+        Route::post('/menu/daftar-supplier/store', [SupplierController::class, 'store'])->name('store');
+    });
+
 });
 
