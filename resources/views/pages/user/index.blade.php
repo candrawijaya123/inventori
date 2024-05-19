@@ -12,23 +12,23 @@
                         <tr>
                             <th> Nama </th>
                             <th> Email </th>
-                            <th> Role </th>
                             <th></th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td> Chandra Wijaya </td>
-                            <td> 0V5v8@example.com </td>
-                            <td> Admin </td>
-                            <td> <a href="" class="btn btn-success btn-sm">
-                                    <i class="mdi mdi-pencil-box mdi-18px"></i>
-                                </a>
-                                <a href="" class="btn btn-danger btn-sm">
-                                    <i class="mdi mdi-delete mdi-18px"></i>
-                                </a>
-                            </td>
-                        </tr>
+                        @foreach ($users as $user)
+                            <tr>
+                                <td> {{ $user->name }} </td>
+                                <td> {{ $user->email }} </td>
+                                <td> <a href="" class="btn btn-success btn-sm">
+                                        <i class="mdi mdi-pencil-box mdi-18px"></i>
+                                    </a>
+                                    <a href="" class="btn btn-danger btn-sm">
+                                        <i class="mdi mdi-delete mdi-18px"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
