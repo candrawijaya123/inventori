@@ -1,15 +1,15 @@
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
     <ul class="nav">
         <li class="nav-item nav-category">Dashboard</li>
-        <li class="nav-item">
-            <a class="nav-link" href="index.html">
+        <li class="nav-item {{ Request::is('dashboard*') ? 'active' : '' }}">
+            <a class="nav-link" href="/dashboard">
                 <span class="icon-bg"><i class="mdi mdi-cube menu-icon"></i></span>
                 <span class="menu-title">Dashboard</span>
             </a>
         </li>
         <li class="nav-item nav-category">Menu Users</li>
-        <li class="nav-item">
-            <a class="nav-link" href="index.html">
+        <li class="nav-item {{ Request::is('menu/daftar-user*') ? 'active' : '' }}">
+            <a class="nav-link" href="/menu/daftar-user">
                 <span class="icon-bg"><i class="mdi mdi-account menu-icon"></i></span>
                 <span class="menu-title">Daftar User</span>
             </a>
