@@ -14,12 +14,6 @@
                 <span class="menu-title">Daftar User</span>
             </a>
         </li>
-        <li class="nav-item {{ Request::is('menu/daftar-pegawai*') ? 'active' : '' }}">
-            <a class="nav-link" href="/menu/daftar-pegawai">
-                <span class="icon-bg"><i class="mdi mdi-account-group menu-icon"></i></span>
-                <span class="menu-title">Daftar Pegawai</span>
-            </a>
-        </li>
         <li class="nav-item {{ Request::is('menu/daftar-supplier*') ? 'active' : '' }}">
             <a class="nav-link" href="/menu/daftar-supplier">
                 <span class="icon-bg"><i class="mdi mdi-truck-delivery menu-icon"></i></span>
