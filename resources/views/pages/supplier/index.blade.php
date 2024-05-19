@@ -17,18 +17,20 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td> Chandra Wijaya </td>
-                            <td> 0V5v8@example.com </td>
-                            <td> Admin </td>
-                            <td> <a href="" class="btn btn-success btn-sm">
-                                    <i class="mdi mdi-pencil-box mdi-18px"></i>
-                                </a>
-                                <a href="" class="btn btn-danger btn-sm">
-                                    <i class="mdi mdi-delete mdi-18px"></i>
-                                </a>
-                            </td>
-                        </tr>
+                        @foreach ($suppliers as $supplier)
+                            <tr>
+                                <td> {{ $supplier->nama_supplier }} </td>
+                                <td> {{ $supplier->telpon }} </td>
+                                <td> {{ $supplier->alamat }} </td>
+                                <td> <a href="" class="btn btn-success btn-sm">
+                                        <i class="mdi mdi-pencil-box mdi-18px"></i>
+                                    </a>
+                                    <a href="" class="btn btn-danger btn-sm">
+                                        <i class="mdi mdi-delete mdi-18px"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
