@@ -13,11 +13,11 @@ return new class extends Migration
     {
         Schema::create('barangs', function (Blueprint $table) {
             $table->integer('kode_barang')->primary();
-            $table->string('nama_barang');
+            $table->string('nama_barang', 150);
             $table->enum('unit', ['Pcs','Buah', 'Lembar']);
-            $table->string('ukuran');
-            $table->string('warna');
-            $table->string('jenis');
+            $table->string('ukuran', 150);
+            $table->string('warna', 50);
+            $table->string('jenis', 50);
             $table->integer('harga_satuan');
             $table->integer('stok');
             $table->timestamps();

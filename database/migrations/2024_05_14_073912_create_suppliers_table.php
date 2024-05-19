@@ -13,9 +13,8 @@ return new class extends Migration
     {
         Schema::create('suppliers', function (Blueprint $table) {
             $table->integer('kode_supplier')->primary();
-            $table->foreignId('user_id');
-            $table->string('nama_supplier');
-            $table->string('telpon');
+            $table->string('nama_supplier', 150);
+            $table->string('telpon', 15);
             $table->text('alamat');
             $table->timestamps();
         });

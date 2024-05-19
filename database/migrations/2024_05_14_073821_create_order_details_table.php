@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('order_details', function (Blueprint $table) {
             $table->foreignId('no_po')->integer();
             $table->foreignId('kode_barang')->integer();
-            $table->string('nama_barang');
+            $table->string('nama_barang', 150);
             $table->integer('harga');
             $table->integer('kuantity');
             $table->date('tgl_simpan');

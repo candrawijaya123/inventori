@@ -10,6 +10,7 @@
                 <table class="table table-striped" id="tbl-user">
                     <thead>
                         <tr>
+                            <th> Kode Supplier </th>
                             <th> Nama Supplier </th>
                             <th> Telpon </th>
                             <th> Alamat </th>
@@ -19,6 +20,7 @@
                     <tbody>
                         @foreach ($suppliers as $supplier)
                             <tr>
+                                <td> {{ $supplier->kode_supplier }} </td>
                                 <td> {{ $supplier->nama_supplier }} </td>
                                 <td> {{ $supplier->telpon }} </td>
                                 <td> {{ $supplier->alamat }} </td>
