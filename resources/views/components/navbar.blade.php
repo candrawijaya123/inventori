@@ -12,7 +12,7 @@
                 <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-toggle="dropdown"
                     aria-expanded="false">
                     <div class="nav-profile-text">
-                        <p class="mb-1 text-black">Chandra Wijaya</p>
+                        <p class="mb-1 text-black">{{ Auth::user()->name }}</p>
                     </div>
                 </a>
                 <div class="dropdown-menu navbar-dropdown dropdown-menu-right p-0 border-0 font-size-sm"
