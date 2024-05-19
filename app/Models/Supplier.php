@@ -20,9 +20,4 @@ class Supplier extends Model
     {
         return $this->hasMany(OrderBarang::class);
     }
-
-    public function user()
-    {
-        return $this->belongsTo(User::class);
-    }
 }

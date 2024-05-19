@@ -12,16 +12,20 @@
                 <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-toggle="dropdown"
                     aria-expanded="false">
                     <div class="nav-profile-text">
-                        <p class="mb-1 text-black">Chandra Wijaya | <span>Admin</span></p>
+                        <p class="mb-1 text-black">Chandra Wijaya</p>
                     </div>
                 </a>
                 <div class="dropdown-menu navbar-dropdown dropdown-menu-right p-0 border-0 font-size-sm"
                     aria-labelledby="profileDropdown" data-x-placement="bottom-end">
                     <div class="p-2">
-                        <a class="dropdown-item py-1 d-flex align-items-center justify-content-between" href="#">
+                        <a class="dropdown-item py-1 d-flex align-items-center justify-content-between" href="#"
+                            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                             <span>Log Out</span>
                             <i class="mdi mdi-logout ml-1"></i>
                         </a>
+                        <form action="{{ route('logout') }}" method="POST" id="logout-form" class="d-none">
+                            @csrf
+                        </form>
                     </div>
                 </div>
             </li>

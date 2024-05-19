@@ -1,8 +1,8 @@
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
     <ul class="nav">
         <li class="nav-item nav-category">Dashboard</li>
-        <li class="nav-item {{ Request::is('dashboard*') ? 'active' : '' }}">
-            <a class="nav-link" href="/dashboard">
+        <li class="nav-item {{ Request::is('home*') ? 'active' : '' }}">
+            <a class="nav-link" href="/home">
                 <span class="icon-bg"><i class="mdi mdi-cube menu-icon"></i></span>
                 <span class="menu-title">Dashboard</span>
             </a>
