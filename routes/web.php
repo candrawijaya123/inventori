@@ -9,3 +9,7 @@ Route::get('/dashboard', function () {
 Route::get('/menu/daftar-user', function () {
     return view('pages.user.index');
 });
+
+Route::get('/menu/daftar-pegawai', function () {
+    return view('pages.pegawai.index');
+});

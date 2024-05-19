@@ -14,8 +14,8 @@
                 <span class="menu-title">Daftar User</span>
             </a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="index.html">
+        <li class="nav-item {{ Request::is('menu/daftar-pegawai*') ? 'active' : '' }}">
+            <a class="nav-link" href="/menu/daftar-pegawai">
                 <span class="icon-bg"><i class="mdi mdi-account-group menu-icon"></i></span>
                 <span class="menu-title">Daftar Pegawai</span>
             </a>
